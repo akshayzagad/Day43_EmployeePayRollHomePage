@@ -7,45 +7,47 @@
     <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;400;500;600&display=swap"rel="stylesheet">
     <link rel ="stylesheet" href="Pay_Roll_Form.css">
     <title>Employee payroll form</title>
-    <script defer src="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\New_Pay_Form.js"></script>>
+    <script defer src="New_Pay_Form.js"></script>>
+    <script defer src="Pay_Roll.js"></script>
 </head>
 <body>
 <header class="header-content header">
     <div class="logo-content">
-        <img src="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\images\logo.png" alt="No image">
+        <img src="assets\images\logo.png" alt="No image">
         <div><span class="emp-text">Employee</span>><br>
         <span class="emp-text emp-payroll">PAYROLL</span>>
         </div>
     </div>
  </header>
- l̥<div class="form-content">
-    <form class="form" action="#" onsubmit="save(event);return false">
+ l̥<div id="formID" class="form-content">
+    <form class="form" action="#" onreset="resetForm()" onsubmit="save(event);return false">
         <!----UC2--->
         <div class="form-head">Employee payroll form</div>
         <div class="row-content">
             <label class="label text" for="name">Name</label>>
             <input class="input" type="text" id="name" name="name"
             placeholder="Your name.." required>
+            <error-output class="text-error" for="text"></error-output>>
         </div>
          <!----UC3--->
         <div class="row-content">
             <label class=" label text" for="profile">Profile image</label>
             <div class="profile-radio-content">
                 <label>
-                    <input type="radio" id="profile1" name="profile" value="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -1.png" required>
-                    <img class="profile" id="image1" src="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -1.png">
+                    <input type="radio" id="profile1" name="profile" value="assets\profile-images\Ellipse -1.png" required>
+                    <img class="profile" id="image1" src="assets\profile-images\Ellipse -1.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile2" name="profile" value="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -2.png" required>
-                    <img class="profile" id="image2" src="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -2.png">
+                    <input type="radio" id="profile2" name="profile" value="assets\profile-images\Ellipse -2.png" required>
+                    <img class="profile" id="image2" src="assets\profile-images\Ellipse -2.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile3" name="profile" value="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -3.png" required>
-                    <img class="profile" id="image3" src="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -3.png">
+                    <input type="radio" id="profile3" name="profile" value="assets\profile-images\Ellipse -3.png" required>
+                    <img class="profile" id="image3" src="assets\profile-images\Ellipse -3.png">
                 </label>
                 <label>
-                    <input type="radio" id="profile4" name="profile" value="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -4.png" required>
-                    <img class="profile" id="image4" src="C:\Users\Akshay\EmployeeWage_Payroo_WebPage\assets\profile-images\Ellipse -4.png">
+                    <input type="radio" id="profile4" name="profile" value="assets\profile-images\Ellipse -4.png" required>
+                    <img class="profile" id="image4" src="assets\profile-images\Ellipse -4.png">
                 </label>
             </div>
         </div>
