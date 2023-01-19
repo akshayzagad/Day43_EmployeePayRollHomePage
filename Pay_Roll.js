@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded' , (event) => {
 const save = () => {
     try {
         let employeePayrollData = createEmployeePayroll();
-        createAndUpdateStorage(EmployeePayrollData);
+        createAndUpdateStorage(employeePayrollData);
     } catch (e) {
         return;
     }
@@ -44,7 +44,6 @@ employeePayrollData.salary = getInputValueById('#salary');
 employeePayrollData.note = getInputValueById('#notes');
 let date = getInputValueById('#day') +" " +getInputValueById('#month')+" "+getInputValueById('#year');
 employeePayrollData.date = Date.parse(date);
-alert(employeePayrollData.toString());
 return employeePayrollData;
 }
 
@@ -70,7 +69,6 @@ function createAndUpdateStorage(employeePayrollData){
     } else {
         employeePayrollList = [employeePayrollData];
     }
-    alert(employeePayrollList.toString());
     localStorage.setItem("EmployeePayrollList",JSON.stringify(employeePayrollList));
 }
 const resetForm = () => {

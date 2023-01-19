@@ -23,7 +23,8 @@ set gender(gender) {
     this._gender = gender;
 }
 
-get department() { return this._department;}
+get department() 
+{ return this._department;}
 set department(department) {
     this._department = department;
 }
