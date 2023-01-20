@@ -43,7 +43,8 @@ employeePayrollData.department = getSelectedValues('[name=department]');
 employeePayrollData.salary = getInputValueById('#salary');
 employeePayrollData.note = getInputValueById('#notes');
 let date = getInputValueById('#day') +" " +getInputValueById('#month')+" "+getInputValueById('#year');
-employeePayrollData.date = Date.parse(date);
+console.log(date+" done ");
+employeePayrollData.startDate = Date.parse(date);
 return employeePayrollData;
 }
 
