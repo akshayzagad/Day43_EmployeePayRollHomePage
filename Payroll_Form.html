@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;400;500;600&display=swap"rel="stylesheet">
     <link rel ="stylesheet" href="Pay_Roll_Form.css">
     <title>Employee payroll form</title>
-    <script defer src="New_Pay_Form.js"></script>>
-    <script defer src="Pay_Roll.js"></script>
+    <!-- <script defer src="New_Pay_Form.js"></script>>
+    <script defer src="Pay_Roll.js"></script> -->
 </head>
 <body>
 <header class="header-content header">
@@ -82,14 +82,14 @@
             <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
             <output class="salary-output text" for="salary">400000</output>
         </div>
-        <div class="row-content">
-            <label class="label text" for="startDate">Start Date</label>
-            <div>
-                <select id="day" name="Day">
+        <div class="row-content" >
+            <label class="label text"  for="startDate">Start Date</label>
+            <div >
+                <select class="date"  id="day" name="Day" >
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                    <option value="4">4</option>
+                    <option value="4" selected>4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
@@ -118,8 +118,8 @@
                     <option value="30">30</option>
                     <option value="31">31</option>
                 </select>
-                <select id="month" name="Month"> 
-                    <option value="Jan">January</option>
+                <select class="date" id="month" name="Month"> 
+                    <option value="Jan" selected>January</option>
                     <option value="Feb">February</option>
                     <option value="March">March</option>
                     <option value="April">April</option>
@@ -132,14 +132,15 @@
                     <option value="Nov">November</option>
                     <option value="Dec">December</option>
                 </select>
-                <select id="year" name="Year">
-                    <option value="2020">2020</option>
+                <select class="date" id="year" name="Year">
+                    <option value="2020" selected>2020</option>
                     <option value="2019">2019</option>
                     <option value="2018">2018</option>
                     <option value="2017">2017</option>
                     <option value="2016">2016</option>
                 </select>
             </div>
+            <error-output class="date-error" for="startDate"></error-output>
         </div>
         <div class="row-content">
             <label class="label text" for="notes">Notes</label>
@@ -155,4 +156,6 @@
      </form>
 </div>
 </body>
+<script defer src="New_Pay_Form.js"></script>
+<script defer src="Pay_Roll.js"></script>
 </html>

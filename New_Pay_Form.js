@@ -43,10 +43,11 @@ get startDate() { return this._startDate;}
 set startDate(startDate) {
     this._startDate = startDate;
 }
+
 toString() {
-    const option = {year:'numeric',month:'long',day:'numeric'};
+    const option = {year:'numeric',month:'short',day:'numeric'};
     const empDate = !this.startDate ? "undefined" :
-                    this.startDate.toLocaleDateString("en-US",option);
+                    this.startDate.toLocaleDateString("en-GB",option);
     return "id=" + this.id + " , name= " + this.name + " ,gender= " + this.gender + " , profilePic= " + this.profilePic + " , department= " + this.department + ", salary= " + this.salary + " , startDate= " + empDate +", note= " + this.note;                
 }
 }
